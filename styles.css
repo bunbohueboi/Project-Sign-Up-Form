@@ -1,0 +1,58 @@
+body{
+    margin:0;
+}
+.container{
+    display:flex;
+}
+
+.left-sidebar{
+    display:flex;
+    flex-basis:35%;
+    border: 2px solid black;
+
+}
+
+
+.right-sidebar{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    justify-content: space-evenly;
+    border:2px solid black;
+    padding-left: 50px;
+    background-clip:padding-box;
+    background-color: #F9F7F7;
+    
+
+}
+
+img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.form-header-container{
+    font-weight: bolder;
+    font-size:20px;
+}
+
+.form-container{
+    background-color: white;
+    display:flex;
+    flex-basis: 30%;
+}
+.form-footer-container{
+    background-clip:padding-box;
+    font-weight:bold;
+    font-size:17px;
+}
+
+button{
+    background-color: #596D48;
+    color:white;
+    font-weight:bold;
+    width:170px;
+    height:38px;
+    border-radius: 4px;
+    outline:none;
+}
