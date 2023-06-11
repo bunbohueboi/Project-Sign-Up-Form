@@ -20,7 +20,6 @@ img {
 .left-sidebar{
     display:flex;
     flex-basis:33%;
-    border: 2px solid black;
 
 }
 
@@ -34,27 +33,39 @@ form{
     flex-basis: 67%;
     justify-content: space-evenly;
     border:2px solid black;
-    padding-left: 50px;
     background-clip:padding-box;
-    background-color: #F9F7F7;
+    background-color: #F9FAFB;
     
 
 }
 
+.right-sidebar>*{
+    padding-left: 60px;
 
+}
+
+h2{
+    margin:0;
+}
 
 .form-header-container{
     font-weight: bolder;
-    font-size:28px;
+    font-size:26px;
     max-width: 75%;
 }
 
+.form-header{
+    font-size:22px;                                                                    px;
+    font-weight:bold;
+    margin:0px;
+}
 .form-container{
     background-color: white;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    flex-basis: 35%;
+    justify-content: space-evenly;
+    flex-basis: 40%;
+    padding-top: 0px;
 }
 
 .field-container{
@@ -63,18 +74,23 @@ form{
 }
 
 label{
-    font-size:14px;
+    font-size:13px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #464646;
 }
 input{
-    width:390px;
-    height:25px;
+    width:400px;
+    height:35px;
     border: 1px solid lightgray;
     border-radius: 3px;
 }
 
+.field-container{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+}
 .left-column, .right-column{
     display:flex;
     flex-direction: column;
@@ -85,17 +101,25 @@ input{
 
 
 .form-footer-container{
-    background-clip:padding-box;
-    font-weight:bold;
     font-size:17px;
 }
 
 button{
     background-color: #596D48;
     color:white;
+    
     font-weight:bold;
-    width:170px;
-    height:38px;
-    border-radius: 4px;
+    font-size: 20px;
+    width:280px;
+    height:55px;
+    
+    border-radius: 8px;
     border-style:solid
+    
+}
+
+a{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
