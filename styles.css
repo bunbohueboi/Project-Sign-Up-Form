@@ -90,24 +90,32 @@ h2{
 }
 
 .form-header{
-    font-size:22px;                                                                    px;
+    font-size:26px;                                                                    px;
     font-weight:bold;
     margin:0px;
+    padding-bottom:30px;
 }
 
-.left-column, .right-column{
-    display:flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 .form-container{
     background-color: white;
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-basis: 43%;
+    padding-bottom:15px;
 }
 
+form{
+    display:flex;
+    flex-direction: column;
+    gap:33px;
+}
+
+form>*{
+    display:flex;
+    gap:50px;
+}
 .field-container{
     display:flex;
     flex-direction: column;
