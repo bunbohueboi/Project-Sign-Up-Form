@@ -13,6 +13,7 @@ button.addEventListener('click', ()=>{
         unmatchingPass.textContent='* Passwords do not match'
         unmatchingPass.style.color='red';
         unmatchingPass.style.margin='0px';
+        
         const passwordContainer=document.querySelectorAll('.field-container')[4];
         passwordContainer.append(unmatchingPass);
 
@@ -21,6 +22,17 @@ button.addEventListener('click', ()=>{
         password.style.borderColor='red';
         confirmPassword.style.boxShadow='0px 0px 1.5px red';     
         confirmPassword.style.borderColor='red';                                                                             
+    }
+
+    else if(password.value == confirmPassword.value && document.querySelector('.unmatching-pass')!=null){
+        const unmatchingPass = document.querySelector('.unmatching-pass');
+        unmatchingPass.remove();
+        password.style.borderColor='lightgray';
+        password.style.boxShadow='none';
+        confirmPassword.style.borderColor='lightgray'
+        confirmPassword.style.boxShadow='none';
+        
+
     }
 });
 
