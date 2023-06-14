@@ -162,10 +162,15 @@ button{
     height:58px;
     
     border-radius: 8px;
-    border-style:solid
+    border-style:none;
     
 }
 
+button:hover{
+    color: #596D48;
+    background-color: white;
+    outline: 2.5px #596D48 solid;
+}
 a{
     color:#596D48;
     text-decoration: none;
